@@ -9,6 +9,20 @@ const connection = mysql.createConnection({
 connection.connect(function(err) {
     if (err) throw err
     console.log('You are now connected...')
+    // var result = connection.query('select * from tb_channels',[])
+    // console.log(result)
 })
+
+// connection.query(`select * from tb_chat`, [], function(err, result) {
+//     if (err) {
+//         console.log(err)
+    
+        
+//     } else {
+        
+//         console.log(result)
+//     }
+// });
+
 module.exports= connection;
 
